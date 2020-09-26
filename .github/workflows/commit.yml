@@ -1,0 +1,10 @@
+name: GitHub Actions Commit
+on: push
+
+jobs:
+  make_commit:
+    name: Actions writting a commit
+    runs-on: ubuntu-latest
+    steps:
+      - run:
+        echo "Writting a commit"
