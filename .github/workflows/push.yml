@@ -1,5 +1,5 @@
 name: Print a hello world in every push!
-on: push
+on: pull_request
 
 jobs:
   say_hello:
