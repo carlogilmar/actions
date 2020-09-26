@@ -1,13 +1,8 @@
-on:
-  push:
-    branches:
-    - master
-  pull_request:
-    branches:
-    - master
+on: push
 
 jobs:
   say_hello:
+    name: Print a hello world in every push!
     runs-on: ubuntu-latest
     steps:
     - run: |
