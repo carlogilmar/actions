@@ -2,9 +2,9 @@ name: GitHub Actions Commit
 on: push
 
 jobs:
-  make_commit:
-    name: Actions writting a commit
+  say_hello:
+    name: Print a hello world in every push!
     runs-on: ubuntu-latest
     steps:
-      - run:
-        echo "Writting a commit"
+    - run: |
+        echo "Hello from GitHub  Actions @carlogilmar!"
