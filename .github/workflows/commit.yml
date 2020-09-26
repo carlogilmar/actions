@@ -3,8 +3,17 @@ on: push
 
 jobs:
   say_hello:
-    name: Print a hello world in every push!
     runs-on: ubuntu-latest
     steps:
-    - run: |
+    - name: Say Hello!
+      run: |
         echo "Hello from GitHub  Actions @carlogilmar!"
+    - name: Checkout
+      uses: actions/checkout@v1
+      run: |
+          date > readme.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
