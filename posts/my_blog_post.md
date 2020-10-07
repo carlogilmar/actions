@@ -1,10 +1,12 @@
-## Visual Partnership
-
-# AWS Summit Online
-
-| Date Created | Visual Partner Author |
-| :----------: |:---------------------:|
-|July 06, 2020 | @carlogilmar |
+---
+title: AWS Summit Online
+published: false
+description: Graphic recordings of the AWS Summit Online
+tags: 'aws, beginners, test'
+cover_image: https://res.cloudinary.com/carlogilmar/image/upload/v1595971782/illustrations/AWSSummit%20Online/IMG_5851_s0ilyr.png
+canonical_url: null
+id: 295998
+---
 
 ## Sponsorship
 
