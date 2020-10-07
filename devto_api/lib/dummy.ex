@@ -5,7 +5,7 @@ defmodule Dummy do
     [dir, _] = String.split(path, "devto_api")
     {res, 0} = System.cmd("ls", ["#{dir}posts"])
     ["" | posts] = res |> String.split("\n") |> Enum.reverse()
-    %{dir: dir, posts: posts}
+    %{dir: dir, posts: posts} |> publish()
   end
 
   def publish(%{dir: dir, posts: posts}) do
