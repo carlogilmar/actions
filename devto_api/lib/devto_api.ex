@@ -26,7 +26,8 @@ defmodule DevtoApi do
     api_key = get_dev_to_api()
     headers = [{"api-key", api_key}, {"Content-type", "application/json"}]
     url = "https://dev.to/api/articles"
-    HTTPoison.post(url, body, headers)
+    {:ok, response} = HTTPoison.post(url, body, headers)
+    response.status_code
   end
 
   defp get_dev_to_api do
