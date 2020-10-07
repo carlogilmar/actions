@@ -16,7 +16,8 @@ defmodule DevtoApi do
         title: title,
         published: false,
         body_markdown: body
-      } |> Map.from_struct()
+      }
+      |> Map.from_struct()
 
     Poison.encode!(%{article: blog_post})
   end
@@ -31,5 +32,4 @@ defmodule DevtoApi do
   defp get_dev_to_api do
     System.get_env("DEVTO_API_KEY")
   end
-
 end

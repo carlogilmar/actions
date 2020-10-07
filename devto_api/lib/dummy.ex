@@ -1,6 +1,5 @@
 defmodule Dummy do
-
-  def post() do
+  def post do
     body = get_example()
     DevtoApi.publish("AWS Summit", body)
   end
@@ -11,5 +10,4 @@ defmodule Dummy do
     {:ok, content} = File.read("#{dir}posts/my_blog_post.md")
     content
   end
-
 end
